@@ -1,0 +1,4 @@
+grafana:
+  adminPassword: "YourGrafanaPassword"
+  service:
+    type: ClusterIP

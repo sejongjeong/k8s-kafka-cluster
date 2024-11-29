@@ -1,0 +1,10 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: log
+  labels:
+    strimzi.io/cluster: study-cluster
+  namespace: kafka
+spec:
+  partitions: 3
+  replicas: 2

@@ -1,0 +1,14 @@
+kafka:
+  clusters:
+    - name: study-cluster
+      bootstrapServers: 'study-cluster-kafka-bootstrap.kafka:9092'
+service:
+  type: NodePort
+  nodePort: 32001
+env:
+  - name: AUTH_TYPE
+    value: "LOGIN_FORM"
+  - name: SPRING_SECURITY_USER_NAME
+    value: "admin"
+  - name: SPRING_SECURITY_USER_PASSWORD
+    value: "pass"
